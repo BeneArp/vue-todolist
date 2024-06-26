@@ -33,7 +33,7 @@
         <div id="container-tasks">
 
             <ul>
-                <li v-for="(task, index) in tasks">{{task.testo}}<i class="fa-solid fa-xmark"></i></li>
+                <li v-for="(task, index) in tasks">{{task.testo}}<i class="fa-solid fa-xmark" @click="removeTask(index)"></i></li>
                 
             </ul>
 

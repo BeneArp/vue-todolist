@@ -54,6 +54,10 @@ createApp({
         moltoUtile(){
             console.log(this.tasks);
         },
+
+        removeTask(index){
+            this.tasks.splice(index, 1)
+        }
     }
 
 }).mount("#container")
