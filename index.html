@@ -24,7 +24,7 @@
         <!-- input e bottone aggiugni -->
         <div>
 
-            <input class="form" type="text" placeholder="Nuova task" v-model="newTask">
+            <input class="form" type="text" placeholder="Nuova task" v-model="newTask" @keyup.enter="addTask">
             <button class="form" @click="addTask">Aggiungi</button>
 
         </div>
