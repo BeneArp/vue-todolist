@@ -21,6 +21,7 @@ const {createApp} = Vue;
 createApp({
     data(){
         return{
+            logoImg: "img/boolean-logo.png",
             newTask: '',
             tasks: [
                 {
