@@ -61,12 +61,16 @@ createApp({
         },
 
         addTask(){
-            this.tasks.unshift({
-                "testo": this.newTask,
-                "avanzamento": false,
-            });
 
-            this.newTask = '';
+            if(this.newTask.length >= 5){
+                this.tasks.unshift({
+                    "testo": this.newTask,
+                    "avanzamento": false,
+                });
+
+                this.newTask = '';
+            }
+
         },
 
         // check(index){
