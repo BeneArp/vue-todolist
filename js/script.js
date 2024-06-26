@@ -54,7 +54,7 @@ createApp({
 
     methods:{
         moltoUtile(){
-            console.log(this.tasks);
+            console.log(this.tasks[0]);
         },
 
         removeTask(index){
@@ -74,16 +74,16 @@ createApp({
 
         },
 
-        // check(index){
+        check(index){
 
-        //     if(this.tasks[index].avanzamento === true){
-        //         avanzamento = false;
-        //     }else{
-        //         avanzamento = true;
-        //     }
+            if(this.tasks[index].avanzamento === true){
+                this.tasks[index].avanzamento = false;
+            }else{
+                this.tasks[index].avanzamento = true;
+            }
 
-        //     console.log("click");
-        // },
+            console.log(this.tasks[index].avanzamento);
+        },
     }
 
 }).mount("#container")
