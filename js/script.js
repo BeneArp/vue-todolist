@@ -53,7 +53,7 @@ createApp({
     methods:{
         moltoUtile(){
             console.log(this.tasks);
-        }
+        },
     }
 
 }).mount("#container")

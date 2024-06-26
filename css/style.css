@@ -16,10 +16,13 @@ ul{
 
 li{
     padding: 0.5em 0;
+    text-align: left;
+    position: relative;
 }
 
 i{
-    margin-left: 10em;
+    position: absolute;
+    right: 0;
 }
 
 img{
@@ -34,13 +37,12 @@ img{
     padding: 2em 0;
     /* debug */
     background-color: lightslategrey;
-    height: 600px;
 }
 
 #container-tasks{
     margin: 3em auto;
     background-color: whitesmoke;
-    width: fit-content;
+    width: 70%;
     padding: 0.5em 2em;
     border-radius: 10px;
     box-shadow: 2px 4px 4px grey;

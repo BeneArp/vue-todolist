@@ -33,15 +33,13 @@
         <div id="container-tasks">
 
             <ul>
-                <li> Tasks <i class="fa-solid fa-xmark"></i></li>
-                <li> <s>Tasks</s>  <i class="fa-solid fa-xmark"></i></li>
-                <li> Tasks <i class="fa-solid fa-xmark"></i></li>
+                <li v-for="(task, index) in tasks">{{task.testo}}<i class="fa-solid fa-xmark"></i></li>
                 
             </ul>
 
         </div>
 
-        
+
         <!-- debug -->
         <button class="form" @click="moltoUtile"><strong>Premi per capirci qualcosa</strong></button>
 
