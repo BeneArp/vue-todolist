@@ -53,9 +53,9 @@ createApp({
     },
 
     methods:{
-        moltoUtile(){
-            console.log(this.tasks[0]);
-        },
+        // moltoUtile(){
+        //     console.log(this.tasks[0]);
+        // },
 
         removeTask(index){
             this.tasks.splice(index, 1)
