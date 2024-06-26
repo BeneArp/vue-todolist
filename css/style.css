@@ -57,3 +57,7 @@ img{
     box-shadow: 2px 4px 4px grey;
     border: none;
 }
+
+.done{
+    text-decoration: line-through;
+}

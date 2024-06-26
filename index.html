@@ -24,8 +24,8 @@
         <!-- input e bottone aggiugni -->
         <div>
 
-            <input class="form" type="text" placeholder="Nuova task">
-            <button class="form">Aggiungi</button>
+            <input class="form" type="text" placeholder="Nuova task" v-model="newTask">
+            <button class="form" @click="addTask">Aggiungi</button>
 
         </div>
 
@@ -33,7 +33,7 @@
         <div id="container-tasks">
 
             <ul>
-                <li v-for="(task, index) in tasks">{{task.testo}}<i class="fa-solid fa-xmark" @click="removeTask(index)"></i></li>
+                <li v-for="(task, index) in tasks" :class="task.avanzamento === true ? 'done' : '' " @click="check(index)">{{task.testo}}<i class="fa-solid fa-xmark" @click="removeTask(index)"></i></li>
                 
             </ul>
 

@@ -21,6 +21,7 @@ const {createApp} = Vue;
 createApp({
     data(){
         return{
+            newTask: '',
             tasks: [
                 {
                     "testo": "Fai la spesa",
@@ -57,7 +58,27 @@ createApp({
 
         removeTask(index){
             this.tasks.splice(index, 1)
-        }
+        },
+
+        addTask(){
+            this.tasks.unshift({
+                "testo": this.newTask,
+                "avanzamento": false,
+            });
+
+            this.newTask = '';
+        },
+
+        // check(index){
+
+        //     if(this.tasks[index].avanzamento === true){
+        //         avanzamento = false;
+        //     }else{
+        //         avanzamento = true;
+        //     }
+
+        //     console.log("click");
+        // },
     }
 
 }).mount("#container")
